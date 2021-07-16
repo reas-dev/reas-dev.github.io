@@ -61,7 +61,10 @@
   <script>
     new TypeIt("#companionMethods", {
       speed: 50,
-      waitUntilVisible: true
+      waitUntilVisible: true,
+      afterComplete: function (step, instance) {
+        instance.destroy();
+      }
     })
       .type("hell", {delay: 300})
       .move(-3)
