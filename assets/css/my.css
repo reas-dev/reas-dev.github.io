@@ -1,0 +1,8 @@
+.header.header-scrolled{
+    background: rgba(255, 255, 255, .95) !important;
+    /* background: rgba(246, 249, 255, .95) !important; */
+}
+
+.tes-bg{ 
+    background: url(../img/tes-bg.png) top center no-repeat !important;
+}
