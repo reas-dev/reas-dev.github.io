@@ -4,5 +4,6 @@
 }
 
 .tes-bg{ 
-    background: url(../img/tes-bg.png) top center no-repeat !important;
+    background: url(../img/tes-bg.png) right center no-repeat !important;
+    background-size: auto !important;
 }
