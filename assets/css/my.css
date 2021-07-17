@@ -34,3 +34,15 @@
 .social-media:hover {
     color: #4154f1 !important;
 }
+
+.min-vh-bottom{
+    min-height: 85vh !important;
+}
+
+.bg-primary{
+    background-color: #012970 !important;
+}
+
+.text-secondary{
+    color: #4154f1 !important;
+}
