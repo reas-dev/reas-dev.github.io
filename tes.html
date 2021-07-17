@@ -31,33 +31,15 @@
 </head>
 
 <body>
-  
+
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="hero d-flex align-items-end min-vh-100">
+  <section id="hero" class="hero d-flex align-items-center min-vh-100">
 
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-10 d-flex flex-column justify-content-center">
-          <span class="section-header p-0">
-            <h3 class="text-body">Hi There! <span class="wave">👋</span></h3>
-          </span>
-          <h1 class="text-center"><span class="text-body">I'M </span>ANDREAS YULIANTO</h1>
-          <br>
-          <br>
-          <h2 id="typeit-2" class="text-center"></h2>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
+          <h1 id="companionMethods" class="text-center"></h1>
         </div>
-      </div>
-      <div class="text-center align-bottom max-vh-100">
-        <a href="https://github.com/reas-dev" target="_blank" class="social-media"><p class="h3 d-inline mx-1"><i class="bi bi-github"></i></p></a>
-        <a href="https://www.linkedin.com/in/andreas-yulianto/" target="_blank" class="social-media"><p class="h3 d-inline mx-1"><i class="bi bi-linkedin bx bxl-linkedin"></i></p></a>
-        <a href="https://www.instagram.com/_and.reas/" target="_blank" class="social-media"><p class="h3 d-inline mx-1"><i class="bi bi-instagram bx bxl-instagram"></i></p></a>
-        <a href="https://wa.me/+6281317476244" target="_blank" class="social-media"><p class="h3 d-inline mx-1"><i class="bi bi-whatsapp"></i></p></a>
       </div>
     </div>
 
@@ -77,30 +59,36 @@
   <script src="assets/vendor/typeit/typeit.min.js"></script>
 
   <script>
-    new TypeIt("#typeit-1", {
+    new TypeIt("#companionMethods", {
       speed: 50,
       waitUntilVisible: true,
       afterComplete: function (step, instance) {
         instance.destroy();
       }
     })
-      .type("Andreas Yulianto")
-      .go();
-  </script>
-
-  <script>
-    new TypeIt("#typeit-2", {
-      speed: 70,
-      waitUntilVisible: true,
-      loop: true,
-      loopDelay: 500,
-      startDelay: 500,
-    })
-      .type("Web Developer", {delay: 700})
-      .delete()
-      .type("Laravel Enthusiast", {delay: 700})
-      .delete()
-      .type("Graphic Design Enthusiast", {delay: 700})
+      .type("hell", {delay: 200})
+      .move(-3)
+      .delete(1)
+      .type('H')
+      .move('END')
+      .type(' wo')
+      .pause(300)
+      .delete(2)
+      .type('Worl')
+      .move(-5)
+      .type('o')
+      .move('END')
+      .type('d!')
+      .pause(300)
+      .break({delay: 150})
+      .break({delay: 150})
+      .type("- re")
+      .pause(600)
+      .delete(4)
+      .type("I'm Andre")
+      .move('END')
+      .pause(400)
+      .type(" 👋")
       .go();
   </script>
 
